@@ -1,14 +1,10 @@
 function skillsMember() {
-    return {
-        restrict: 'E',
-        templateUrl: 'modules/skills/views/member.html',
-        controller: 'SkillsMemberController',
-        controllerAs: 'vm',
-        bindToController: true,
-        scope: {
-            member: '='
-
-    }
-};
-
+    var member = document.getElementById("member");
+    var skills = document.getElementById("skills");
+    var memberBtn = document.getElementById("memberBtn");
+    var skillsBtn = document.getElementById("skillsBtn");
+    member.style.display = "block";
+    skills.style.display = "none";
+    memberBtn.style.backgroundColor = "#4CAF50";
+    skillsBtn.style.backgroundColor = "#2ECC71";
 }
